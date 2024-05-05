@@ -1,0 +1,7 @@
+sudo systemctl start mysqld
+sudo systemctl stop mysqld
+sudo systemctl status mysqld
+
+
+sudo systemctl disable mysqld
+sudo systemctl enable mysqld
