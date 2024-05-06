@@ -1,0 +1,28 @@
+Entiendo, para configurar tu sistema para usar el diseño de teclado
+US International con la variante "altgr-intl", puedes ajustar el
+contenido del archivo `/etc/X11/xorg.conf.d/00-keyboard.conf` de
+la siguiente manera:
+
+```
+Section "InputClass"
+    Identifier "Keyboard Defaults"
+    MatchIsKeyboard "yes"
+    Option "XkbLayout" "us"
+    Option "XkbVariant" "altgr-intl"
+EndSection
+```
+
+Con este ajuste, tu sistema estará configurado para utilizar la
+distribución de teclado "us" con la variante "altgr-intl", lo que
+te permitirá acceder a los caracteres especiales asociados con esta
+variante utilizando la tecla "AltGr".
+
+Después de realizar este cambio, guarda el archivo y
+REINICIA TU SISTEMA
+para aplicar la nueva configuración del teclado. Una vez
+reiniciado, tu teclado debería estar configurado según tus
+preferencias.
+
+
+###No es necesario, por si acaso###
+sudo locale-gen
